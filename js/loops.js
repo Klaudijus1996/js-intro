@@ -50,3 +50,24 @@ console.log(`Tekstas "${tekstas}" atbulai yra "${atbulas}".`);
 for (let i=0; i<11; i++) {
     console.log(i%3);
 }
+
+console.log('----------');
+console.log('DALYBA BE LIEKANOS');
+console.log('----------');
+
+const from = 0;
+const till = 11;
+const divider = 3;
+let count = 0;
+
+for (let i=from; i<=till; i = i + divider) {
+    if (i % divider === 0) {
+        count++;
+    }
+}
+
+const answer = `Skaiciu intervale tarp ${from} ir ${till}, besidalinanciu be liekanos is ${divider} yra ${count} vienetai.`;
+
+console.log(answer);
+
+
